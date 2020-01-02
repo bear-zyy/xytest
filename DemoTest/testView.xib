@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6GG-gI-J24" customClass="testView">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="啊啊啊啊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPI-fO-fce">
+                    <rect key="frame" x="65" y="89.5" width="70" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gby-YQ-h5A">
+                    <rect key="frame" x="77.5" y="35" width="45" height="34"/>
+                    <state key="normal" title="改变1">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <connections>
+                        <action selector="click1:" destination="6GG-gI-J24" eventType="touchUpInside" id="mjq-00-8aj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X93-HM-mFH">
+                    <rect key="frame" x="76" y="146" width="48" height="34"/>
+                    <state key="normal" title="改变2">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <connections>
+                        <action selector="click2:" destination="6GG-gI-J24" eventType="touchUpInside" id="yNE-BW-w3D"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="X93-HM-mFH" firstAttribute="centerX" secondItem="6GG-gI-J24" secondAttribute="centerX" id="5kf-ek-esf"/>
+                <constraint firstItem="Gby-YQ-h5A" firstAttribute="top" secondItem="giE-OM-R7g" secondAttribute="top" constant="35" id="PgT-q2-59y"/>
+                <constraint firstItem="jPI-fO-fce" firstAttribute="centerY" secondItem="6GG-gI-J24" secondAttribute="centerY" id="R4y-fU-wZb"/>
+                <constraint firstItem="Gby-YQ-h5A" firstAttribute="centerX" secondItem="6GG-gI-J24" secondAttribute="centerX" id="eJx-F8-rRi"/>
+                <constraint firstItem="giE-OM-R7g" firstAttribute="bottom" secondItem="X93-HM-mFH" secondAttribute="bottom" constant="20" id="qcQ-tU-gAu"/>
+                <constraint firstItem="jPI-fO-fce" firstAttribute="centerX" secondItem="6GG-gI-J24" secondAttribute="centerX" id="sKV-Ol-b6L"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="giE-OM-R7g"/>
+            <connections>
+                <outlet property="label" destination="jPI-fO-fce" id="rNM-tB-hhc"/>
+            </connections>
+            <point key="canvasLocation" x="60" y="71"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,22 @@
+PODS:
+  - ReactiveObjC (3.1.1)
+  - SDWebImage (5.3.1):
+    - SDWebImage/Core (= 5.3.1)
+  - SDWebImage/Core (5.3.1)
+
+DEPENDENCIES:
+  - ReactiveObjC
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - ReactiveObjC
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  SDWebImage: 7137d57385fb632129838c1e6ab9528a22c666cc
+
+PODFILE CHECKSUM: 5d820c5ebf4cb618fd71996909730747d82d77a9
+
+COCOAPODS: 1.8.4
