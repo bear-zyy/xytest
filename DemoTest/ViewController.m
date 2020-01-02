@@ -18,6 +18,8 @@
 #import "tableViewController.h"
 #import "collectionViewController.h"
 #import "delegateAndProtocolVC.h"
+#import <Flutter/Flutter.h>
+#import "AppDelegate.h"
 
 @interface ViewController ()<suberProtocol>
 
@@ -204,7 +206,19 @@
     [delegateBut addTarget:self action:@selector(delegateButClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:delegateBut];
 
+    UIButton * flutterBut = [UIButton buttonWithType:UIButtonTypeCustom];
+    flutterBut.frame = CGRectMake(250, 150, 100, 40);
+    [flutterBut setTitle:@"flutterBut" forState:UIControlStateNormal];
+    [flutterBut setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [flutterBut addTarget:self action:@selector(flutterButClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:flutterBut];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)flutterButClick{
+    FlutterEngine * engine = [(AppDelegate *)[UIApplication sharedApplication].delegate flutterEngine];
+    FlutterViewController * vc = [[FlutterViewController alloc] initWithEngine:engine nibName:@"" bundle:nil];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 -(void)superProtocolMethod{

@@ -10,3 +10,5 @@ target 'DemoTest' do
 
 end
 
+flutter_application_path = '/Users/zyy/Desktop/test/DemoTest/flutter_module'
+  eval(File.read(File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')), binding)

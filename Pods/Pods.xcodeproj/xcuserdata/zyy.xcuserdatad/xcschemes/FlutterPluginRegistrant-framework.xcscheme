@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A49BC6C582AA44AC9BCF3FFAE7A741FE"
-               BuildableName = "Pods_DemoTest.framework"
-               BlueprintName = "Pods-DemoTest"
+               BlueprintIdentifier = "AF696363DD7C2B3911B3B5DCCC4ECB1C"
+               BuildableName = "FlutterPluginRegistrant.framework"
+               BlueprintName = "FlutterPluginRegistrant-framework"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

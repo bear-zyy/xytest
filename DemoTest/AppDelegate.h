@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Flutter/Flutter.h>
+#import <FlutterPluginRegistrant-framework-umbrella.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : FlutterAppDelegate <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+//@property (strong, nonatomic) UIWindow *window;
+
+@property (strong , nonatomic) FlutterEngine * flutterEngine;
 
 
 @end

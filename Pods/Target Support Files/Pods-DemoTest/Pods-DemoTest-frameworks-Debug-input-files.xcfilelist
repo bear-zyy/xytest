@@ -1,3 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-DemoTest/Pods-DemoTest-frameworks.sh
+${PODS_ROOT}/../flutter_module/.ios/Flutter/engine/Flutter.framework
+${BUILT_PRODUCTS_DIR}/FlutterPluginRegistrant-framework/FlutterPluginRegistrant.framework
 ${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
