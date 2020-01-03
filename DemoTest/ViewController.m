@@ -219,6 +219,11 @@
     FlutterEngine * engine = [(AppDelegate *)[UIApplication sharedApplication].delegate flutterEngine];
     FlutterViewController * vc = [[FlutterViewController alloc] initWithEngine:engine nibName:@"" bundle:nil];
     [self presentViewController:vc animated:YES completion:nil];
+    
+//    FlutterViewController * vc = [[FlutterViewController alloc] init];
+//    vc.title = @"test";
+//    [self presentViewController:vc animated:YES completion:nil];
+    
 }
 
 -(void)superProtocolMethod{

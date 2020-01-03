@@ -23,6 +23,7 @@
     self.flutterEngine = [[FlutterEngine alloc] initWithName:@"io.flutter" project:nil];
     [self.flutterEngine runWithEntrypoint:nil];
     [GeneratedPluginRegistrant registerWithRegistry:self.flutterEngine];
+//    [GeneratedPluginRegistrant registerWithRegistry:self];
     
     return [super application:application didFinishLaunchingWithOptions:launchOptions];
     return YES;
